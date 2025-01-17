@@ -58,6 +58,12 @@ button {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
 .header-logo {
   font-weight: 700;
   font-size: 18px;
@@ -68,6 +74,14 @@ button {
 .header-logo-italic {
   font-style: italic;
 }
+
+.header-menu-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-left: auto;
+}
+
 .header-menu-link {
   font-weight: 500;
   font-size: 14px;
@@ -84,6 +98,7 @@ button {
 .hero {
   background-color: #1e1823;
   margin-bottom: 72px;
+  border-radius: 30px;
 }
 .hero-wrapper {
   padding: 380px 40px 40px 40px;
@@ -95,6 +110,7 @@ button {
   letter-spacing: -0.03em;
   color: #fff;
   margin-bottom: 32px;
+  max-width: 484px;
 }
 .hero-btn {
   font-weight: 600;
@@ -105,6 +121,9 @@ button {
   cursor: pointer;
   border: none;
   border-radius: 100px;
+  padding: 14px 40px;
+  min-width: 144px;
+  margin-right: 14px;
 }
 .hero-btn-link {
   font-weight: 600;
@@ -114,6 +133,9 @@ button {
   cursor: pointer;
   border: 1px solid #fff;
   border-radius: 100px;
+  padding: 14px 40px;
+  min-width: 183px;
+  background-color: transparent;
 }
 .hero-btn-scroll {
   font-weight: 500;
@@ -122,7 +144,14 @@ button {
   letter-spacing: -0.03em;
   color: #fff;
   cursor: pointer;
+  margin-left: auto;
 }
+
+.hero-button {
+  display: flex;
+  align-items: center;
+}
+
 /* FEATURES */
 .features {
   background-color: #1e1823;
@@ -132,8 +161,11 @@ button {
 .features-list {
   padding-left: 18px;
   padding-right: 18px;
+  display: flex;
+  gap: 88px;
 }
 .features-item {
+  width: calc((100% - 176px) / 3);
 }
 .features-subtitle {
   font-weight: 600;
@@ -152,6 +184,7 @@ button {
 /* TASTE */
 .taste {
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 .taste-title {
   max-width: 411px;
@@ -170,10 +203,50 @@ button {
   margin: 0 auto 50px;
 }
 .taste-list {
+  display: flex;
+  align-items: center;
+  gap: 19px;
 }
-.taste-item {
+.taste-item-first {
+  border-radius: 15px;
+  width: 270px;
+  height: 270px;
+  background-color: #fd9222;
+  padding: 28px 32px 82px;
+  color: #fff;
+  width: ((100% - 3 * 19px) / 4);
+}
+.taste-item-second {
+  border: 1px solid #fd9222;
+  border-radius: 15px;
+  width: 270px;
+  height: 270px;
+  background-color: #fff;
+  padding: 28px 32px 82px;
+  color: #111;
+  width: ((100% - 3 * 19px) / 4);
+}
+.taste-item-third {
+  border-radius: 15px;
+  width: 270px;
+  height: 270px;
+  background-color: #1e1823;
+  padding: 28px 32px 82px;
+  color: #fff;
+  width: ((100% - 3 * 19px) / 4);
+}
+.taste-item-fourth {
+  border: 1px solid #fd9222;
+  border-radius: 15px;
+  width: 270px;
+  height: 270px;
+  background-color: #fff;
+  padding: 28px 32px 82px;
+  color: #111;
+  width: ((100% - 3 * 19px) / 4);
 }
 .taste-image {
+  margin-bottom: 36px;
 }
 .taste-subtitle {
   font-weight: 600;
@@ -181,10 +254,11 @@ button {
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: #111;
 }
+
 /* MADE */
 .made {
+  padding-bottom: 100px;
 }
 .made-title {
   font-weight: 600;
@@ -194,19 +268,39 @@ button {
   text-transform: uppercase;
   text-align: center;
   color: #111;
+  margin-bottom: 50px;
 }
 .made-title span {
   color: #fd9222;
 }
+
+.made-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.made-content {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+}
 .made-image {
+  border-radius: 15px;
+  width: 600px;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.4), url("path_to_image");
+  object-fit: cover;
 }
 .made-subtitle {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
   color: #111;
+  margin-bottom: 28px;
 }
 .made-list {
+  list-style: disc;
+  padding-left: 20px;
 }
 .made-item {
 }
@@ -215,6 +309,7 @@ button {
   line-height: 1.29;
   letter-spacing: -0.02em;
   color: #111;
+  margin-bottom: 24px;
 }
 /* LOVED */
 .loved {
