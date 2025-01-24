@@ -62,6 +62,8 @@ button {
 .header-nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
 .header-logo {
@@ -92,6 +94,25 @@ button {
 .header-menu-link:hover,
 .header-menu-link:focus {
   color: #fd9222;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-soc-list {
+  display: flex;
+  margin-left: 90px;
+  gap: 18px;
+}
+.header-soc-item {
+}
+.header-soc-link {
+}
+
+.header-soc-icon {
+  fill: transparent;
+  stroke: #111;
 }
 
 /* HERO */
