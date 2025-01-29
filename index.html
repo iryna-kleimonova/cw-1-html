@@ -271,5 +271,47 @@
         </ul>
       </div>
     </footer>
+    <div class="backdrop">
+      <div class="modal">
+        <button type="button" class="modal-close">X</button>
+        <p class="section-title modal-title">LEAVE A REVIEW ABOUT <span>OUR CHOCOLATE</span></p>
+        <form class="modal-form">
+          <div class="modal-field">
+            <label for="user-name" class="modal-label">Name
+            <div class="input-wrap">
+              <input type="text" class="modal-input" name="user-name" placeholder="Enter you name" id="user-name">
+              <svg class="modal-input-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+          </label>
+        </div>
+          <div class="modal-field">
+            <label for="user-email" class="modal-label">Email
+              <div class="input-wrap">
+            <input type="email" class="modal-input" name="user-email" placeholder="Enter you email" id="user-email">
+            <svg class="modal-input-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg></div>
+          </label>
+          </div>
+          <div class="modal-field">
+            <label for="user-tel" class="modal-label">Phone number
+              <div class="input-wrap">
+            <input type="tel" class="modal-input" name="user-tel" placeholder="Enter you phone number" id="user-tel">
+          <svg class="modal-input-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg></div>
+          </label>
+          </div>
+
+          <div class="modal-field">
+            <label for="user-comment" class="modal-label">Comment</label>
+            <textarea name="user-comment" id="user-comment" class="modal-textarea" placeholder="Text input"></textarea>
+          </div>
+          <button type="submit" class="modal-submit-btn">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
