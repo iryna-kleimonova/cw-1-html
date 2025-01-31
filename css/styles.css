@@ -340,6 +340,7 @@ button {
 }
 /* MADE */
 .made {
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 .made-title {
@@ -419,12 +420,27 @@ button {
   padding-bottom: 100px;
 }
 .loved-title {
+  margin: 0 auto 50px;
 }
 .loved-list {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-bottom: 50px;
 }
 .loved-item {
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+  background-color: #fff;
+  position: relative;
+  width: calc((100% - 56px) / 3);
 }
 .loved-image {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
 }
 .loved-subtitle {
   font-weight: 600;
@@ -432,6 +448,8 @@ button {
   line-height: 1.33;
   text-align: center;
   color: #111;
+  padding-top: 56px;
+  margin-bottom: 24px;
 }
 .loved-text {
   font-size: 14px;
@@ -439,6 +457,7 @@ button {
   letter-spacing: -0.02em;
   text-align: center;
   color: rgba(17, 17, 17, 0.7);
+  padding: 0 24px 24px 24px;
 }
 .loved-btn {
   font-weight: 600;
@@ -452,6 +471,8 @@ button {
   width: 222px;
   height: 50px;
   background-color: transparent;
+  margin: 0 auto;
+  display: block;
 }
 
 /* FOOTER */
